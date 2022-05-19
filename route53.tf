@@ -1,6 +1,6 @@
 resource "aws_route53_record" "ecs-dns-record" {
   zone_id = var.public_hosted_zone
-  name = var.dns_name
+  name = "jenkins"
   type = "A"
 
   alias {

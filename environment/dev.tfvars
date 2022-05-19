@@ -1,6 +1,3 @@
-# Terraform state
-bucket = "ecs-dev-ankur"
-key = "terraform_state/infrastructure/dev/terraform.tfstate"
 region = "us-east-2"
 
 #Environment information
@@ -12,8 +9,8 @@ availability_zones = [
   "us-east-2c"
 ]
 
-public_hosted_zone = "Z06663162RGEGP7NLC0F7"
-alb_certificate = "arn:aws:acm:us-east-2:651827679494:certificate/eef6a9a0-49c3-4be1-8a39-d7a9cefa5489"
+public_hosted_zone = "Z0803797J309H5MJO5OV"
+alb_certificate = "arn:aws:acm:us-east-2:651827679494:certificate/207fc465-ccad-4f20-8687-4eb4847dd39e"
 
 #node group details
 ami_type = "AL2_x86_64"

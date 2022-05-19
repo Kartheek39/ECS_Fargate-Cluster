@@ -36,7 +36,7 @@ resource "aws_alb_target_group" "port8080-tg-2" {
 
   health_check {
     path = "/"
-    matcher = "200"
+    matcher = "403"
   }
   tags = {
     Name = format("%s-%s-port8080-tg-2",var.dns_name, var.account_environment)
@@ -78,7 +78,7 @@ resource "aws_alb_listener_rule" "rule-1" {
   priority     = 1
   action {
     type             = "forward"
-    target_group_arn = aws_alb_target_group.port80-tg-1.arn
+    target_group_arn = aws_alb_target_group.port8080-tg-2.arn
   }
 
   condition {
